@@ -1,5 +1,5 @@
-
-#pragma once
+#ifndef ABSTRACT_FRUIT_H
+#define ABSTRACT_FRUIT_H
 
 class AbstractFruit {
 public:
@@ -7,3 +7,5 @@ public:
 
   virtual bool isForFruitSalad() const = 0;
 };
+
+#endif

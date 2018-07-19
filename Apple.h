@@ -1,5 +1,5 @@
-
-#pragma once
+#ifndef APPLE_H
+#define APPLE_H
 
 #include "AbstractFruit.h"
 
@@ -13,3 +13,5 @@ public:
 private:
   int m_colorIndex = 0;
 };
+
+#endif

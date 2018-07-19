@@ -1,5 +1,5 @@
-
-#pragma once
+#ifndef ABSTRACT_BOWL_H
+#define ABSTRACT_BOWL_H
 
 #include "AbstractFruit.h"
 
@@ -28,3 +28,5 @@ protected:
 private:
   std::vector<std::unique_ptr<AbstractFruit>> m_fruits;
 };
+
+#endif

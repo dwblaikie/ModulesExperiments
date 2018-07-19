@@ -1,5 +1,5 @@
-
-#pragma once
+#ifndef TOMATO_H
+#define TOMATO_H
 
 #include "AbstractFruit.h"
 
@@ -13,3 +13,5 @@ public:
 private:
   int m_size = 1;
 };
+
+#endif

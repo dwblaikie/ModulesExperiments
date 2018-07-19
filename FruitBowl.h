@@ -1,5 +1,5 @@
-
-#pragma once
+#ifndef FRUIT_BOWL_H
+#define FRUIT_BOWL_H
 
 #include "AbstractBowl.h"
 #include "AbstractFruit.h"
@@ -11,3 +11,5 @@ public:
   std::unique_ptr<AbstractFruit>
   add(std::unique_ptr<AbstractFruit> fruit) override;
 };
+
+#endif
