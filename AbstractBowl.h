@@ -5,27 +5,28 @@
 
 #include "AbstractFruit.h"
 
-#include <vector>
 #include <memory>
+#include <vector>
 
-class BOWLS_EXPORT AbstractBowl
-{
+class BOWLS_EXPORT AbstractBowl {
 public:
-	AbstractBowl() = default;
-	AbstractBowl& operator=(AbstractBowl const&) = delete;
-	AbstractBowl(AbstractBowl const&) = delete;
+  AbstractBowl() = default;
+  AbstractBowl &operator=(AbstractBowl const &) = delete;
+  AbstractBowl(AbstractBowl const &) = delete;
 
-	std::unique_ptr<AbstractFruit> takeAt(int index);
+  std::unique_ptr<AbstractFruit> takeAt(int index);
 
-	/// Add a fruit to the bowl.
-	/// Return the fruit to you if it is not accepted. Return an empty unique_ptr otherwise
-	virtual std::unique_ptr<AbstractFruit> add(std::unique_ptr<AbstractFruit> fruit) = 0;
+  /// Add a fruit to the bowl.
+  /// Return the fruit to you if it is not accepted. Return an empty unique_ptr
+  /// otherwise
+  virtual std::unique_ptr<AbstractFruit>
+  add(std::unique_ptr<AbstractFruit> fruit) = 0;
 
-	int size() const { return m_fruits.size(); }
+  int size() const { return m_fruits.size(); }
 
 protected:
-	void doAdd(std::unique_ptr<AbstractFruit> fruit);
+  void doAdd(std::unique_ptr<AbstractFruit> fruit);
 
 private:
-	std::vector<std::unique_ptr<AbstractFruit>> m_fruits;
+  std::vector<std::unique_ptr<AbstractFruit>> m_fruits;
 };

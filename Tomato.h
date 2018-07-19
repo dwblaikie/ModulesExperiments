@@ -5,14 +5,13 @@
 
 #include "AbstractFruit.h"
 
-class NOTFRUITSALAD_EXPORT Tomato : public AbstractFruit
-{
+class NOTFRUITSALAD_EXPORT Tomato : public AbstractFruit {
 public:
-	void setSize(int size);
-	int size() const;
+  void setSize(int size);
+  int size() const;
 
-	bool isForFruitSalad() const override;
+  bool isForFruitSalad() const override;
 
 private:
-	int m_size = 1;
+  int m_size = 1;
 };

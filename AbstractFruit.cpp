@@ -1,7 +1,4 @@
 
 #include "AbstractFruit.h"
 
-void AbstractFruit::grow()
-{
-
-}
+void AbstractFruit::grow() {}

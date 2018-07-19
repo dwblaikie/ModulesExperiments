@@ -5,14 +5,13 @@
 
 #include "AbstractFruit.h"
 
-class FRUITSALAD_EXPORT Apple : public AbstractFruit
-{
+class FRUITSALAD_EXPORT Apple : public AbstractFruit {
 public:
-	void setColorIndex(int colorIndex);
-	int colorIndex() const;
+  void setColorIndex(int colorIndex);
+  int colorIndex() const;
 
-	bool isForFruitSalad() const override;
+  bool isForFruitSalad() const override;
 
 private:
-	int m_colorIndex = 0;
+  int m_colorIndex = 0;
 };
