@@ -1,11 +1,9 @@
 
 #pragma once
 
-#include "fruitsalad_export.h"
-
 #include "AbstractFruit.h"
 
-class FRUITSALAD_EXPORT Apple : public AbstractFruit {
+class Apple : public AbstractFruit {
 public:
   void setColorIndex(int colorIndex);
   int colorIndex() const;

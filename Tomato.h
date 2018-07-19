@@ -1,11 +1,9 @@
 
 #pragma once
 
-#include "notfruitsalad_export.h"
-
 #include "AbstractFruit.h"
 
-class NOTFRUITSALAD_EXPORT Tomato : public AbstractFruit {
+class Tomato : public AbstractFruit {
 public:
   void setSize(int size);
   int size() const;

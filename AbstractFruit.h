@@ -1,9 +1,7 @@
 
 #pragma once
 
-#include "abstractfruit_export.h"
-
-class ABSTRACTFRUIT_EXPORT AbstractFruit {
+class AbstractFruit {
 public:
   void grow();
 
