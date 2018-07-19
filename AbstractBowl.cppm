@@ -1,12 +1,9 @@
-#ifndef ABSTRACT_BOWL_H
-#define ABSTRACT_BOWL_H
+export module AbstractBowl;
 
-#include "AbstractFruit.h"
+import AbstractFruit;
+import std;
 
-#include <memory>
-#include <vector>
-
-class AbstractBowl {
+export class AbstractBowl {
 public:
   AbstractBowl() = default;
   AbstractBowl &operator=(AbstractBowl const &) = delete;
@@ -28,5 +25,3 @@ protected:
 private:
   std::vector<std::unique_ptr<AbstractFruit>> m_fruits;
 };
-
-#endif

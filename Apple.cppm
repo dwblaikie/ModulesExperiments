@@ -1,9 +1,7 @@
-#ifndef APPLE_H
-#define APPLE_H
+export module Apple;
+import AbstractFruit;
 
-#include "AbstractFruit.h"
-
-class Apple : public AbstractFruit {
+export class Apple : public AbstractFruit {
 public:
   void setColorIndex(int colorIndex);
   int colorIndex() const;
@@ -13,5 +11,3 @@ public:
 private:
   int m_colorIndex = 0;
 };
-
-#endif

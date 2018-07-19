@@ -1,9 +1,7 @@
-#ifndef GRAPE_H
-#define GRAPE_H
+export module Grape;
+import AbstractFruit;
 
-#include "AbstractFruit.h"
-
-class Grape : public AbstractFruit {
+export class Grape : public AbstractFruit {
 public:
   void setSeedless(int seedless);
   int seedless() const;
@@ -13,5 +11,3 @@ public:
 private:
   int m_seedless = 0;
 };
-
-#endif

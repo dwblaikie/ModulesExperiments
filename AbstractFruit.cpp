@@ -1,4 +1,3 @@
-
-#include "AbstractFruit.h"
+module AbstractFruit;
 
 void AbstractFruit::grow() {}

@@ -1,5 +1,9 @@
+module AbstractBowl;
 
-#include "AbstractBowl.h"
+// Are these two imports really necessary, since they're in the module interface
+// file too?
+import AbstractFruit;
+import std;
 
 std::unique_ptr<AbstractFruit> AbstractBowl::takeAt(int index) {
   auto fruit = std::move(m_fruits[index]);

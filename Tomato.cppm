@@ -1,9 +1,8 @@
-#ifndef TOMATO_H
-#define TOMATO_H
+export module Tomato;
 
-#include "AbstractFruit.h"
+import AbstractFruit;
 
-class Tomato : public AbstractFruit {
+export class Tomato : public AbstractFruit {
 public:
   void setSize(int size);
   int size() const;
@@ -13,5 +12,3 @@ public:
 private:
   int m_size = 1;
 };
-
-#endif

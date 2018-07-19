@@ -1,8 +1,13 @@
+module FruitBowl;
 
-#include "FruitBowl.h"
+import Apple;
+import Grape;
 
-#include "Apple.h"
-#include "Grape.h"
+import AbstractFruit;
+import std;
+
+// Buggily required import, likely
+import AbstractBowl;
 
 FruitBowl::FruitBowl() {
   add(std::make_unique<Apple>());
