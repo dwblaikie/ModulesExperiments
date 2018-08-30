@@ -1,18 +1,18 @@
-module FruitBowl;
+module Bowls;
 
-import Apple;
-import Grape;
-
-import AbstractFruit;
 import std;
+import FruitSalad;
+import AbstractFruit;
 
-// Buggily required import, likely
-import AbstractBowl;
+AbstractBowl::~AbstractBowl() {}
 
 FruitBowl::FruitBowl() {
-  add(std::make_unique<Apple>());
-  add(std::make_unique<Grape>());
+  // Crashes Clang right now.
+  // add(std::make_unique<Apple>());
+  // add(std::make_unique<Grape>());
 }
+
+FruitBowl::~FruitBowl() {}
 
 std::unique_ptr<AbstractFruit>
 FruitBowl::add(std::unique_ptr<AbstractFruit> fruit) {

@@ -1,4 +1,4 @@
-module Grape;
+module FruitSalad;
 
 void Grape::setSeedless(int seedless) { m_seedless = seedless; }
 

@@ -1,4 +1,4 @@
-module AbstractBowl;
+module Bowls;
 
 // Are these two imports really necessary, since they're in the module interface
 // file too?

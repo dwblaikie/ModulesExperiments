@@ -1,4 +1,4 @@
-module Tomato;
+module NotFruitSalad;
 
 void Tomato::setSize(int size) { m_size = size; }
 

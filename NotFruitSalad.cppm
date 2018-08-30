@@ -1,4 +1,4 @@
-export module Tomato;
+export module NotFruitSalad;
 
 import AbstractFruit;
 

@@ -1,12 +1,7 @@
-import FruitBowl;
-import SaladBowl;
-
-import Tomato;
-
+import Bowls;
+import NotFruitSalad;
 import AbstractFruit;
 import std;
-
-import AbstractBowl; // Workaround PR37980.
 
 int main() {
   FruitBowl fb;

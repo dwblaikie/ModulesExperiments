@@ -1,4 +1,4 @@
-module Apple;
+module FruitSalad;
 
 void Apple::setColorIndex(int colorIndex) { m_colorIndex = colorIndex; }
 
